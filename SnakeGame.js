@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 
 const GRID_SIZE = 15;
-const CELL_SIZE = Math.floor(Dimensions.get('window').width * 0.9 / GRID_SIZE);
+const CELL_SIZE = (Math.floor(Dimensions.get('window').width * 0.9 / GRID_SIZE));
 const GRID_WIDTH = CELL_SIZE * GRID_SIZE;
 
 // Direction constants
@@ -351,7 +351,7 @@ const styles = StyleSheet.create({
     width: GRID_WIDTH,
     height: GRID_WIDTH,
     backgroundColor: '#ccc',
-    borderWidth: 2,
+    // borderWidth: 2,//here is problem 
     borderColor: '#333',
   },
   grid: {
@@ -359,6 +359,7 @@ const styles = StyleSheet.create({
     height: '100%',
     flexDirection: 'row',
     flexWrap: 'wrap',
+    overflow: 'hidden',
   },
   cell: {
     width: CELL_SIZE,
