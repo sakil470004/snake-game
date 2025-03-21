@@ -348,10 +348,10 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   gridContainer: {
-    width: GRID_WIDTH,
-    height: GRID_WIDTH,
+    width: GRID_WIDTH+2,//border width
+    height: GRID_WIDTH+2,//border height
     backgroundColor: '#ccc',
-    // borderWidth: 2,//here is problem 
+    borderWidth: 1,//here is problem 
     borderColor: '#333',
   },
   grid: {
@@ -365,7 +365,7 @@ const styles = StyleSheet.create({
     width: CELL_SIZE,
     height: CELL_SIZE,
     borderWidth: 1,
-    borderColor: '#ddd',
+    borderColor: '#ccc',
   },
   controlsContainer: {
     marginTop: 30,
