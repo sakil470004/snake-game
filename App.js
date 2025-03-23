@@ -4,7 +4,7 @@ import SnakeGame from './SnakeGame';
 
 export default function App() {
   return (
-    <SafeAreaView style={{flex: 1}}>
+    <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
       <SnakeGame/>
     </SafeAreaView>
